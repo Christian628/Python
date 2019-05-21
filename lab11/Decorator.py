@@ -41,7 +41,7 @@ class Cache:
     def _all_instances():
         return Cache._all_caches
 
-    @Size(all_instances = _all_instances)
+    @size(all_instances = _all_instances)
     def entries_count(self):
         return len(self._storage)
 
